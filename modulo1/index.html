@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 1 | HTML5 e CSS3</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icone/favicon.ico" type="image/x-icon">
+    <style>
+        img {
+            border-radius: 10px;
+        }
+
+        video {
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Módulo 1</h1>
+
+    <hr>
+
+    <p style="font-family: Arial, Helvetica, sans-serif;">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Debitis recusandae nemo earum sit voluptate. Impedit delectus possimus earum eaque veritatis, natus sed harum
+        perferendis ratione vero saepe cupiditate nisi culpa officiis non, reiciendis ipsam quia id sequi? Soluta
+        voluptas beatae id, laudantium veniam eum totam neque cupiditate velit dolorum dolores.</p>
+
+    <hr>
+
+    <p class="italico">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+        ducimus. </p>
+
+    <hr>
+
+    <h2>Exercícios:</h2>
+    <ul>
+        <li><a href="hierarquia.html" rel="next">Hierarquia de Títulos</a></li>
+        <li><a href="lista.html" rel="next">Listas</a></li>
+        <li><a href="profile.html" rel="next">Perfil</a></li>
+        <li><a href="tagshtml.html">Tags em HTML5</a></li>
+        <li><a href="desafio-video/videos.html">Vídeos</a></li>
+    </ul>
+    <hr>
+
+    <p>Para utiilizar "&lt" e "&gt", você deve colocar "&" + "lt" ou "gt" + ";"</p>
+
+    <p class="italico">gt (greater than / maior que) = &gt; <br>lt (less than / menor que) = &lt;</p>
+
+    <hr>
+
+    <h2>Símbolos especiais:</h2>
+    <p>"&" + "reg" = &reg: <br>"&" + "copy" = &copy; <br>"&" + "trade" = &trade; <br>"&" + "euro" = &euro; <br>...</p>
+
+    <h2>Emojis:</h2>
+    <p>Busque na emojipedia o código do emoji que deseja</p>
+
+    <p>ex.: "&#x" + "1F920" = &#x1F920</p>
+
+    <p class="italico">"&#x" informa que é um hexadecimal</p>
+
+    <hr>
+
+    <h2>Imagens:</h2>
+    <p class="italico">O comando "CTRL + Space" permite visualizar os caminhos na pasta com mais facilidade</p>
+
+    <img src="cr7-500.jpeg" alt="Cristiano Ronaldo">
+    <p class="italico"><br>Imagem na mesma pasta</p>
+
+    <hr>
+
+    <img src="imagens/corinthians-200.png" alt="Corinthians">
+    <p class="italico"><br>Imagem na mesma pasta</p>
+
+    <hr>
+
+    <img src="https://cdn2.steamgriddb.com/icon/8f279c77c332ff9a8c080e916cd21063/32/256x256.png" alt="">
+    <p class="italico"><br>Imagem da internet (copiando o endereço da imagem)</p>
+
+    <hr>
+
+    <h2>Favicon:</h2>
+    <p>Para inserir um favicon no site basta usar o comando "link:favicon" na &lthead&gt do código e anexar a imagem
+        utilizando os mesmos métodos anteriores</p>
+    <p class="italico">É recomendável que o arquivo esteja no formato ".ico"</p>
+
+    <hr>
+
+    <h2>Principais Formatações:</h2>
+
+    <h5>Negrito/Destaque:</h5>
+    <p>Podemos colocar palavras/frases em <b>negrito</b> utilizando a tag "&ltb&gt" - (Não semântica)</p>
+    <p>Podemos colocar palavras/frases em <strong>negrito</strong> utilizando a tag "&ltstrong&gt" - (Semântica)</p>
+
+    <h5>Itálico/Ênfase:</h5>
+    <p>Podemos colocar palavras/frases em <i>itálico</i> utilizando a tag "&lti&gt" - (Não semântica)</p>
+    <p>Podemos colocar palavras/frases em <em>itálico</em> utilizando a tag "&ltem&gt" - (Semântica)</p>
+
+    <h5>Texto Marcado:</h5>
+    <p>Podemos colocar <mark>marcações</mark> em termos utilizando a tag "&ltmark&gt"</p>
+    <p class="italico">A cor do marcador é por padrão amarela, e pode ser alterada utilizando o comando
+        "background-color" em CSS</p>
+    <p></p>
+
+    <h5>Grande/Pequena</h5>
+    <p>Podemos criar <big>letras grandes</big> utilizando a tag "&ltbig&gt" - (Não semântica)</p>
+    <p>Podemos criar <small>letras pequenas</small> utilizando a tag "&ltsmall&gt" - (Semântica)</p>
+
+    <h5>Riscado/Sublinhado:</h5>
+    <p>Podemos <del>riscar</del> um texto utilizando a tag "&ltdel&gt"</p>
+    <p>Podemos <ins>sublinhar</ins> texto utilizando a tag "&ltins&gt" - (Semântica)</p>
+    <p>Podemos <u>sublinhar</u> um texto utilizando a tag "&ltu&gt" - (Não Semântica)</p>
+
+    <h5>Subscrito/Sobrescrito:</h5>
+    <p>Podemos adicionar um texto <sub>subscrito</sub> utilizando a tag "&ltsub&gt"</p>
+    <p>Podemos adicionar um texto <sup>sobrescrito</sup> utilizando a tag "&ltsup&gt"</p>
+
+    <h5>Escrita monoespaçada:</h5>
+
+    <p><code>Podemos criar textos com escrita monoespaçada utilizando a tag "&ltcode&gt"</code></p>
+    <p><strong>Comparativo:</strong></p>
+    <p>Abcdefghijklmnopqrstuvwxyz - Normal</p>
+    <p><code>Abcdefghijklmnopqrstuvwxyz - Monoespaçada</code></p>
+
+    <h5>Código fonte/Pré formatação:</h5>
+    <p>Podemos manter a indentação do texto utilizando a tag "&ltpre&gt", sendo útili para escrever visualmente o código
+    </p>
+
+    <p><strong>Exemplo:</strong></p>
+
+    <pre>
+        <code>
+            //Com tag &ltpre&gt
+            
+            let a = Number(prompt("Insira um número"))
+
+            if (isNaN(a)) {
+                alert("Erro: valor inválido")
+            } else if (a % 2 === 0) {
+                alert("Par")
+            } else {
+                alert("Ímpar")
+            }
+        </code>
+    </pre>
+
+    <p>//Sem tag &ltpre&gt</p>
+
+    <p>
+        let a = Number(prompt("Insira um número"))
+
+        if (isNaN(a)) {
+        alert("Erro: valor inválido")
+        } else if (a % 2 === 0) {
+        alert("Par")
+        } else {
+        alert("Ímpar")
+        }
+    </p>
+
+    <h5>Citações simples:</h5>
+    <p>Podemos inserir <q>citações simples</q> utilizando a tag "&ltq&gt"</p>
+    <p class="italico">Podemos utilizar as aspas diretamente, entretando a tag "&ltq&gt" dá o sentido de citação ao
+        termo, sendo mais "adequada"</p>
+
+    <h5>Citação completa:</h5>
+    <p>Podemos inserir uma citação completa utilizando a tag "&ltblockquote&gt":</p>
+    <blockquote cite="https://filosofianaescola.com/politica/o-homem-e-o-lobo-do-homem/">
+        <p>O homem é o lobo do homem</p>
+    </blockquote>
+    <p class="italico">Dentro da tag podemos inserir o parâmetro "cite", que permite os mecanismos de busca detectarem
+        de onde foi retirada a citação, desde que tenha sido informado no parâmetro</p>
+
+    <h5>Abreviações:</h5>
+    <p>Podemos inserir o significado de abreviações utilizando a tag "&ltabbr&gt"</p>
+    <p><strong>Exemplo:</strong>
+        <br>
+        <abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Congregação Cristã no Brasil">CCB</abbr> e
+        <abbr title="Cristiano Ronaldo">CR7</abbr>
+    </p>
+
+    <hr>
+
+    <h2>Links:</h2>
+    <p>Podemos criar links utilizando a tag "&lta&gt"</p>
+    <a href="lista.html">Exemplo (Listas)</a>
+    <p><br>Podemos adicionar parâmetros como "rel" e "target" para definir que o link é externo e deve ser aberto em uma
+        nova guia, sem fechar a atual</p>
+    <p><code><pre>&lta href="lista.html" target="_blank" rel="external"&gtExemplo (Listas)&lt/a&gt</pre></code></p>
+    <p class="italico">É recomendável utilizar estes parâmetros quando for anexar um link para um site externo. Ex.: <a
+            class="italico" classhref="https://www.youtube.com" target="_blank" rel="external">Youtube</a></p>
+
+    <hr>
+
+    <h2>Link para download:</h2>
+    <p>Para criarmos links de download podemos utilizar a tag "&lta&gt" </p>
+    <ul>
+        <li><a href="livro/meulivro.pdf" type="application/pdf">PDF</a></li>
+        <li><a href="livro/meulivro.zip" type="application/zip">ZIP</a></li>
+    </ul>
+    <p class="italico">Podemos utilizar o parâmetro "type='application/pdf'" <strong>(exemplo)</strong> para informar o
+        tipo de arquivo</p>
+
+    <hr>
+
+    <h2>Imagens flexíveis:</h2>
+
+    <p>Podemos utilizar a tag "&ltpicture&gt" e "source:media:type" para criarmos imagens flexíveis, que alteram seu
+        tamanho de acordo a largura do dispositivo que está visualizando</p>
+    <p class="italico">Para testar basta diminuir ou aumentar o zoom no navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/imagem-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/imagem-m.png" type="image/png">
+        <img src="imagens/imagem-g.png" alt="Imagem flexível">
+    </picture>
+
+    <hr>
+
+    <h2>Áudio</h2>
+    <p>Podemos colocar áudios em nosso site utilizando a tag"&ltaduio&gt" e os parâmetros "control" e "autoplay"</p>
+    <p class="italico">autoplay = inicia a música autmaticamente <br>control = mostra os controles do áudio (som, tempo,
+        play etc.)</p>
+    <audio src="audio/Hollow Knight OST - City of Tears.mp3" controls>Exemplo</audio>
+    <p>Como alguns navegadores não possuem compatibilidade com determinados tipos de arquivo de áudio, podemos utilizar
+        a tag "&ltsource:src&gt" dentro de "&ltaudio&gt", e assim disponibilizarmos diferentes tipos de arquivo de um
+        mesmo áudio <br></p>
+
+
+    <audio controls preload="metadata">
+        <source src="audio/Hollow Knight OST - City of Tears.mp3" type="audio/mpeg">
+        <source src="audio/Hollow Knight OST - City of Tears.ogg" type="audio/ogg">
+        <source src="audio/Hollow Knight OST - City of Tears.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não suporta arquivos de áudio, <a
+                href="audio/Hollow Knight OST - City of Tears.mp3">clique aqui para fazer o download</a></p>
+    </audio>
+    <p class="italico">O segundo áudio foi feito desta maneira, e, apesar de só possuir a versão "mp3", foram
+        adicionados os códigos para as versões "ogg" e "wav", caso houvessem os arquivos</p>
+
+    <hr>
+
+    <h2>Vídeos Internos:</h2>
+    <p>Para adicionarmos vídeos ao nosso site podemos utilizar a tag "&ltvideo&gt"</p>
+    <p class="italico">Podemos adicionar parâmetro como "autoplay" e "controls" no video também</p>
+
+    <video controls width="500" preload="metadata">
+        <source src="video/9974337-hd_1920_1080_30fps.mp4" type="video/mp4">
+        <source src="video/9974337-hd_1920_1080_30fps.m4v" type="video/mp4">
+        <source src="video/9974337-hd_1920_1080_30fps.webm" type="video/webm">
+        <source src="video/9974337-hd_1920_1080_30fps.ogv" type="video/ogg">
+        <p>Seus navegador não tem compatibilidade com arquivos de vídeo, para baixar o arquivo <a
+                href="video/9974337-hd_1920_1080_30fps.mp4"></a>clique aqui</p>
+    </video>
+
+    <p class="italico">Foi necessário ajustar o tamanho do vídeo acima utilizando a tag "&ltwidth&gt". Além disso, como
+        nos áudios, há varios exemplos de formatos de vídeo inseridos no código, para casos onde não haja
+        compatibilidade do navegador com determinado tipo de arquivo.</p>
+    <p class="italico">Há também como adicionar capas ao vídeo utilizando o parâmetro "poster"</p>
+    <p>É importante ressaltar que em casos de hospedagem de sites, utilizar vídeos internamente no site pode gerar altos
+        custos de tráfego de banda, portanto pode ser mais adequado utilizar vídeos externos:</p>
+
+    <hr>
+
+    <h2>Vídeos externos:</h2>
+    <p>Para vídeos incorporados do YouTube, a própria plataforma possui um meio que gera automaticamente o código. Basta
+        acessar o vídeo desejado, clicar em "Compartilhar" e despois "Incorporar", lá eles disponibilizam um código HTML
+        para ser utilizado</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/JSfuFlhsxZY?si=-BACWL41WpG1Oa28"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p class="italico">De modo semelhante, outras plataformas como o "Vimeo" também possuem este recurso:</p>
+</body>
+
+</html>

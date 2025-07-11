@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icone/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas ordenadas:</h2>
+    <p>Para criar listas ordenadas utilizamos a tag <abbr title="Ordered List">"&ltol&gt"</abbr> e para cada item que
+        desejarmos adicionar utilizamos a tag <abbr title="List item">"&ltli&gt"</abbr>:</p>
+    <ol>
+        <li>Acordar</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Estudar</li>
+        <li>Almoçar</li>
+    </ol>
+
+    <ol type="A" ; start="6">
+        <li>Acordar</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Estudar</li>
+        <li>Almoçar</li>
+    </ol>
+
+    <ol type="I" ; start="11">
+        <li>Acordar</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Estudar</li>
+        <li>Almoçar</li>
+    </ol>
+
+    <p class="italico">Podemos alterar o estilo de numeração utilizando o parâmetro "type", além de mudar o valor
+        inicial utilizando o parâmetro "start"</p>
+
+    <hr>
+
+    <h2>Listas não ordenadas</h2>
+    <p>Para criar listas não ordenadas utilizamos a tag <abbr title="Unordered List">"&ltul&gt"</abbr> e para cada item
+        que desejarmos adicionar utilizamos a tag <abbr title="List item">"&ltli&gt"</abbr>:</p>
+    <ul>
+        <li>Acordar</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Estudar</li>
+        <li>Almoçar</li>
+    </ul>
+
+    <ul type="square">
+        <li>Acordar</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Estudar</li>
+        <li>Almoçar</li>
+    </ul>
+
+    <ul type="circle">
+        <li>Acordar</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Estudar</li>
+        <li>Almoçar</li>
+    </ul>
+
+    <p class="italico">Podemos alterar o estilo de numeração utilizando o parâmetro "type"</p>
+
+    <hr>
+
+    <h2>Junção de listas:</h2>
+    <p>Podemos colocar listas dentro de listas utilizando uma dentro da outra as tags citadas anteriormente, além de
+        utilizar diferentes tipos de lista</p>
+
+    <ol>
+        <li>Acordar</li>
+        <ul>
+            <li>Seg - Qua: 6:30</li>
+            <li>Qui - Sex: 7:30 </li>
+            <li>Sab - Dom: 10:00</li>
+        </ul>
+        <li>Tomar café</li>
+
+    </ol>
+
+    <hr>
+
+    <h2>Lista de definições</h2>
+
+    <p>Para criar listas de definição utilizamos a tag <abbr title="Definition List">"&ltdl&gt"</abbr>, adicionando
+        itens com a tag "&ltdt&gt", e sua definição com a tag "&ltdd&gt"</p>
+
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+    </dl>
+
+
+    <br>
+    <a href="index.html" rel="prev">Voltar</a>
+</body>
+
+</html>

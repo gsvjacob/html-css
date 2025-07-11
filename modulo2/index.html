@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 2</title>
+</head>
+
+<body>
+    <h1>MÓDULO 2</h1>
+
+    <hr>
+
+    <h2>Trabalhando com fontes:</h2>
+    <p>Os seguintes comandos podem ser usados para variar a letra em CSS3: "font-family", "font-size", "font-weight",
+        "font-style", "text-decoration" etc. Quando trabalhamos com "font-size" é recomendável utilizar a medida "em"
+    </p>
+
+    <h3>Propriedade "shorthand":</h3>
+    <code>
+        <pre>
+            
+            Ao invés de escrevermos:
+
+            h1{
+            font-style: normal;
+            font-weight: bolder;
+            font-size: 2.5em;
+            font-family: Arial, Helvetica, sans-serif;
+            }
+
+            Podemos simplificar para:
+
+            font: normal bolder 2.5em 'Arial', 'Helvetica', sans-serif 
+        </pre>
+    </code>
+
+    <p>A ordem sempre será: "font-style - font-weight - font-size - font-family"</p>
+
+    <hr>
+
+    <h2>Importando com Google Fonts:</h2>
+    <p>Para importarmos fontes extenas ao nosso código, podemos utilizar o "Google Fonts" para buscar e adicinoar
+        utulizando "@import" no código CSS. Como exemplo eu importei a fonte "Montserrat":</p>
+    <h2 class="normal">Exemplo: ARIAL</h2>
+    <h2 style="font-weight: 800;">Exemplo: MONTSERRAT</h2>
+
+    <hr>
+
+    <h2>Baixando fontes externas:</h2>
+    <p>Podemos também baixar fontes em sites na web e adicioná-las ao nosso site por meio da regra "@font-face" no
+        código CSS</p>
+    <p class="snow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, excepturi.</p>
+    <p>Dentro da regra "@font-face" podemos adicionar "format{}" para indicar o formato do arquivo, logo que pode variar
+        de acordo com a fonte instalada. Cada arquivo recebe um modo de ser declarado:</p>
+    <ul>
+        <li>opentype (.otf)</li>
+        <li>truetype (.ttf)</li>
+        <li>-embedded-opentype</li>
+        <li>truetype-aat (Apple Advanced Typography)</li>
+        <li>svg</li>
+    </ul>
+
+    <hr>
+
+    <h2>Seletores personalizados:</h2>
+    <p>Quando utilizamos, por exemplo, mais de uma "&lth1&gt" em nosso site, para representar os títulos. mas queremos
+        diferenciar um deles, por exemplo o primeiro, para ser o título principal, podemos adicionar o parâmetro "id"
+        para diferenciarmos ele dos demais, mesmo que todos sejam "&lth1&gt".</p>
+    <p>Em um exemplo onde utilizemos o id "main" para diferenciar (você pode decidir o id), dentro do código CSS
+        utilizaremos o elemento a ser modificado (ex.: h2) + #id. No caso, você substituirá "#id" por # + o nome que
+        você selecionou para diferenciar.<strong> Exemplo utilizando "&lth2&gt":</strong></p>
+    <h2 id="diferente">ABC</h2>
+    <code><pre>&lth2 id="main"&gtABC &lt/h2&gt </pre></code>
+    <h2>DEF</h2>
+    <code><pre>&lth2&gtABC &lt/h2&gt</pre></code>
+    <h2>GHI</h2>
+    <code><pre>>&lth2&gtABC &lt/h2&gt</pre></code>
+    <p>De acordo com a W3C, quando criamos uma id, devemos utilizar ela <strong>somente uma vez</strong>. Quando for
+        necessário mais de um uso, devemos utilizar o parâmetro "class".
+    <ul>
+        <li>"#" = id</li>
+        <li>"." = calss</li>
+        <li>":" = pseudo-class</li>
+        <li>"::" = pseudo-element</li>
+        <li>">" = children</li>
+    </ul>
+
+    <p><strong>Exemplo de pseudoclasse utilizando "&ltdiv&gt" e "hover"</strong></p>
+    <div>
+        Passe o mouse aqui
+        <p>Texto escondido</p>
+    </div>
+
+    <hr>
+
+    <h2>Modelo de caixas:</h2>
+    <p>Diagrama simples:</p>
+    <img src="https://tableless.github.io/iniciantes/assets/img/box-model.png" alt="Imagem Modelo de Caixas">
+
+    <p><strong>Tipo de caixa:</strong></p>
+    <p><strong>box-level</strong>: Quando criado, pulará uma linha do conteúdo para iniciar, e pulará mais uma linha
+        para retornar o conteúdo. Exemplo:</p>
+    <p>_ _ _ _ _ _ _ _ _ _ _ _ _ _ </p>
+    <p>_ _ _ _ _ _</p>
+    <p><ins>[box]</ins></p>
+    <p>_ _ _ _ _ _ _ _ _ _ _ _ _ _</p>
+
+    <br>
+
+    <p><strong>inline-level</strong>: Quando criado, iniciará na mesma linha, independente de haver conteúdo ou não, e
+        caso haja conteúdo depois, não pulará linha. Exemplo:</p>
+    <p>_ _ _ _ _ _ _ _ _ _ _ _ _ _ </p>
+    <p>_ _ _ _ _ _ <ins>[box]</ins> _ _ _ _</p>
+
+    <br>
+
+    <p><strong>Exemplos:</strong></p>
+    <p>box-level</strong>: &ltdiv&gt, &ltp&gt, &lth1&gt etc.</p>
+    <p>inline-level: &ltspan&gt, &ltstrong&gt, &lta&gt etc.</p>
+
+    <p><strong>Exercícios:</strong></p>
+    <p><a href="exercicios/ex003/index.html">box-level</a></p>
+    <p><a href="exercicios/ex004/index.html">box-level</a></p>
+</body>
+
+</html>

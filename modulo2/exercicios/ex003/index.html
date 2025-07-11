@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="../../style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Level</title>
+    <style>
+        h1{
+            margin: 0%;
+            padding: 5px;
+            width: max-content;
+            text-align: justify;
+            background-color: lightgray;
+        }
+        h1#mod{
+            height: 50px;
+            width: 300px;
+        }
+        h1#mod2{
+            height: 50px;
+            width: 300px;
+            border-color: darkgray;
+            border-width: 4px;
+            border-style: solid
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Exemplo de Caixa box-level</h1>
+    <p>Os parágrados tamvém são exemplos de caixas box-level, diferente dos <a href="#">links</a>. </p>
+
+    <p>Podemos modificar o fundo (representado pela cor cinza claro) da nossa caixa utilizando tags como "&ltheight&gt" "&ltwidth&gt". Observe no exemplo (height = 50px; width = 300px)</p>
+
+    <h1 id="mod"></h1>
+
+    <p>Podemos também adicionar bordas utilizando "border" ("width", "color", "style" etc), observe:</p>
+    <h1 id="mod2"></h1>
+
+    <h2>Shorthands:</h2>
+    <p><strong>border/outline:</strong> "border width;"  "border style;"  "border color;" →→→ border: [width] [style] [color]</p>
+
+    <p><strong>padding/margin:</strong> "padding-top" "padding-right" "padding-bottom" "padding-left" →→→ padding: [top] [right] [bottom] [left]</p>
+
+    <p><strong>OBS:</strong> Caso você informe um único valor, todas as medidas corresponderam a ele. <br>Caso você informe apenas dois valores, a primeira correspondera ao "top" e o "bottom", enquando a segunda correspondera ao "right" e "left"</p>
+    
+</body>
+</html>

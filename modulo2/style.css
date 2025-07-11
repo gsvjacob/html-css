@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'snow';
+    src: url(font/sketchy\ in\ snow.otf), format(opentype);
+}
+
+h1{
+    font: normal bolder 2.5em 'Montserrat', 'Arial', 'Helvetica', sans-serif;
+    text-align: center;
+    border: 3px solid rgb(138, 138, 138);
+    background-color: rgb(226, 226, 226);
+    border-radius: 1em;
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+
+}
+
+h2, h3, h4, p, div{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+p{
+    text-indent: 20px;
+}
+
+h2{
+    font-size: 1.5em;
+    background-color: rgb(226, 226, 226);
+}
+
+h3{
+    font-size: 1em;
+}
+
+.montserrat{
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-weight: 800;
+}
+
+.snow{
+    font-family: 'snow', 'Arial', sans-serif;
+    font-weight: normal;
+}
+
+ul, ol, li{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+code, pre{
+    font: normal 600 1.05em monospace;
+    color: rgb(0, 0, 0);
+    background-color: rgb(226, 226, 226);
+}
+
+.normal{
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2#diferente{
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+/*Utilizando pseudoclasses*/
+
+div:hover{
+    color: red;
+    font-weight: 800;
+}
+
+div > p{
+    display: none;
+}
+
+div:hover > p{
+    display: block;
+}
