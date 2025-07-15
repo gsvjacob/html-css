@@ -4,50 +4,54 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
-:root{
+:root {
     --font1: Verdana, Geneva, Tahoma, sans-serif;
     --font2: 'Passion One', cursive;
     --font3: 'Sriracha', cursive;
 }
-*{
+
+* {
     margin: 0px;
     padding: 0px;
 }
 
-html, body{
+html,
+body {
     font-family: var(--font1);
     background-color: darkgray;
     min-height: 100vh;
 }
 
-header{
+header {
     background-color: black;
     color: white;
     text-align: center;
 }
 
-header > h1{
+header>h1 {
     font-size: 10vw;
     font-family: var(--font2);
     padding-top: 50px;
     font-variant: small-caps;
 }
 
-header > p{
+header>p {
     padding-bottom: 50px;
 }
 
-header a, footer a{
+header a,
+footer a {
     color: white;
     text-decoration: none;
     font-weight: bolder;
 }
 
-header a:hover, footer a:hover{
+header a:hover,
+footer a:hover {
     text-decoration: underline;
 }
 
-section{
+section {
     font-family: var(--font3);
     padding-top: 10vh;
     padding-bottom: 10vh;
@@ -56,25 +60,48 @@ section{
     font-size: 4vw;
 }
 
-section.normal{
+section>p {
+    padding-bottom: 5vw;
+}
+
+section.normal {
     background-color: white;
     color: black;
 }
 
-section.imagem{
+section.imagem {
     background-color: rgb(31, 31, 31);
-    color: white;   
+    color: white;
+    box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-section.imagem > p{
-    background-color: rgba(0, 0, 0, 0.25);
+section.imagem>p {
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     display: inline-block;
     padding: 5px;
 }
 
-footer{
+section#img01 {
+    background-image: url(../images/background001.jpg);
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url(../images/background002.jpg);
+    background-position: right bottom;
+
+}
+
+footer {
     background-color: black;
     color: white;
     text-align: center;
     padding: 10px;
+}
+
+footer > p{
+    font-size: 2.5vw;
 }
