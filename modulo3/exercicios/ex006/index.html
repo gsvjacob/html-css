@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 200px;
+            height: 150px;
+            position: relative;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        th{
+            background-color: black;
+            color: white;
+            border: 1px solid white;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+        
+        td#total{
+            background-color: black;
+            color: white;
+            border: 1px solid white;
+            padding: 5px;
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        }
+
+        tr > th{
+            position: sticky;
+            top: -1px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        Minha Primeira Tabela
+    </h1>
+
+    <table>
+        <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+        </tr>
+        <tr>
+            <td>A1</td>
+            <td>A2</td>
+            <td>A3</td>
+        </tr>
+        <tr>
+            <td>B1</td>
+            <td>B2</td>
+            <td>B3</td>
+        </tr>
+    </table>
+    <p style="font-style: italic; font-size: 0.8em;">
+        OBS: Podemos modificar o alinhamento vertical dos conteúdos das células utilizando a propriedade
+        "vertical-align"
+    </p>
+
+    <h1>Utilizando Estrutura de Tabela</h1>
+    <table id="grande"">
+        <caption>Exemplo</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>x</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>y</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>z</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>a</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total:</th>
+                <td>b</td>
+            </tr>
+        </tfoot>
+    </table>
+    <p style="font-style: italic; font-size: 0.8em;">
+        OBS: Podemos utilizar a propriedade scope para informar se os dados (td) de uma categoria (th) virão abaixo (col) ou ao lado (row). 
+    </p>
+        <p style="font-style: italic; font-size: 0.8em;">
+        OBS: Para criarmos o efeito zebrado podemos utilizar a pseudo-classe "nth-child" na configuração de estilo de "tr" (linhas). 
+    </p>
+        <p style="font-style: italic; font-size: 0.8em;">
+        OBS: Podemos tornar o cabeçalho da tabela fixo do seguinte modo: <br>1 - Adicionar a propriedade "position: relative" à tabela. <br>2 - Adicionar a propriedade "position: sticky; top: 0px;" ao "th" 
+    </p>
+
+    <h1>Mesclagem de células</h1>
+    <table>
+        <tr>
+            <td>A</td>
+            <td colspan="2"><strong>colspan="2"</strong></td>
+            
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>E</td>
+            <td rowspan="2"><strong>rowspan="2"</strong></td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+        </tr>
+    </table>
+</body>
+
+</html>
