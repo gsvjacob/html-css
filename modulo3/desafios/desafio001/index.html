@@ -21,6 +21,13 @@
             width: 100px;
             text-align: center;
         }
+
+        col.cnome{
+            background-color: yellow;
+        }
+        col.cgrupo{
+            background-color: green;
+        }
     </style>
 </head>
 
@@ -125,6 +132,48 @@
                 <td>Star Wars 5</td>
                 <td>Taxi Driver</td>
                 <td>Toy Story</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cgrupo" span="2">
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Marcelo</td>
+                <td>M</td>
+                <td>24</td>
+                <td>Jardineiro</td>
+            </tr>
+            <tr>
+                <td>Luzia</td>
+                <td>F</td>
+                <td>27</td>
+                <td>Enfermeira</td>
+            </tr>
+            <tr>
+                <td>Danilo</td>
+                <td>M</td>
+                <td>36</td>
+                <td>Professor</td>
+            </tr>
+            <tr>
+                <td>Francisca</td>
+                <td>F</td>
+                <td>17</td>
+                <td>Estudante</td>
             </tr>
         </tbody>
     </table>
