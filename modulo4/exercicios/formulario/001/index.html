@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        section {
+            background-color: lightgray;
+            padding: 10px;
+            margin-top: 20px;   
+            border: 2px solid gray;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Meu Primeiro Formulário:</h1>
+    <form action="cadastro.js">
+        <p><label for="inome">Nome</label>: <input type="text" name="Nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="Sobrenome" id="isobrenome"></p>
+        <input type="submit" value="Enviar">
+    </form>
+    <section>
+        <h1>Observações:</h1>
+        <p>O parâmetro "label" deve ser usado para relacionar um texto (ex.: Nome) com sua entrada de dados para o
+        formulário (ex.: Caixa de texto ao lado 
+        de "Nome")</p>
+        <p>O parâmetro "action" é usado para definir o local para onde os dados do formulário serão enviados</p>
+        <p></p>
+        <p>GET: Deixa visível os dados na URL do site após o envio do formulário</p>
+        <p>POST: Os dados ficam acessíveis, porém não explicitamente</p>
+        <p>- É preferível utilizar o método POST para o envio de dados sensíveis, apesar de não protegê-los devidamente
+        (Para isso deve-se utilizar <strong>HTTPS</strong>) <br><br>- É preferível utilizar o método GET para dado
+        não tão sensíveis, e para casos onde haja a possibilidade de compartilhar a URL, por exemplo em pesquisas do
+        Google.</p>
+        <p>O método GET suporta no máximo 3000 bytes</p>
+    </section>
+</body>
+
+</html>
