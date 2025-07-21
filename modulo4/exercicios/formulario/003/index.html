@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        section {
+            background-color: lightgray;
+            margin-top: 20px;
+            padding: 10px;
+            border: 2px solid gray;
+            border-radius: 20px;
+        }
+
+        input {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="cadastro.js" method="get">
+        <div>
+            <label for="inome">
+                Nome:
+                <input type="text" name="nome" id="inome" required autocomplete="name">
+            </label>
+        </div>
+        <div>
+            <label for="imedia">
+                Média:
+                <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.5">
+            </label>
+        </div>
+        <div>
+            <label for="imes">
+                Período Letivo:
+                <input type="month" name="mes" id="imes" value="2025-01">
+            </label>
+        </div>
+        <div>
+            <label for="ihora">
+                Horário: 
+                <input type="time" name="hora" id="ihora" value="12:00">
+            </label>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+
+    <section>
+        <h1>Parâmetros:</h1>
+        <p>- step (em "input:number"): Define qual o salto de um valor para o próximo (ex.: 1 - 2 - 3 - [+ 1] ou 0.5 - 1 - 1,5 - 2 - 2,5 - 3 - [+ 0,5])</p>
+        <p>- max / min (em "input:number"): Define o valor máximo ou mínimo a ser preenchido no campo. Representa o valor do número, e não a quantidade de caractéres</p>
+        <p>- value: Adiciona um dado previamente ao campo. Mesmo que o usuário não tenha interagido, haverá um dado prévio no local.</p>
+    </section>
+</body>
+
+</html>
