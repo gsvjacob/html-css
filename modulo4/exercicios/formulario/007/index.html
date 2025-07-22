@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <h1>
+        Exemplo Fomulário:
+    </h1>
+    <form action="cadastro.js" method="get">
+        <div>
+            <label for="iest">
+                Estado:
+                <select name="est" id="iest">
+                    <datalist id="lista">
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RR">Roraima</option>
+                        <option value="ES">Espirito Santo</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="AC">Acre</option>
+                        <option value="BA">Bahia</option>
+                        <option value="PI">Piauí</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="AM">Amazônia</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="GO">Goiânia</option>
+                        <option value="PA">Pará</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="PR">Paraná</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </datalist>
+                </select>
+            </label>
+        </div>
+
+        <div>
+            <label for="ilist">
+                Estado:
+                <input type="text" name="list" id="ilist" list="lista">
+                <datalist>
+                    <datalist id="lista">
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RR">Roraima</option>
+                        <option value="ES">Espirito Santo</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="AC">Acre</option>
+                        <option value="BA">Bahia</option>
+                        <option value="PI">Piauí</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="AM">Amazônia</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="GO">Goiânia</option>
+                        <option value="PA">Pará</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="PR">Paraná</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </datalist>
+                </datalist>
+            </label>
+        </div>
+
+        <p>Mensagem:</p>
+
+        <div>
+            <label for="imsg">
+                <textarea name="msg" id="imsg" cols="50" rows="10"></textarea>
+            </label>
+        </div>
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+
+    <section>
+        <h1>Extra:</h1>
+        <p><strong>select:</strong> Permite a criação de um campo onde o usuário pode escolher uma opção de acordo com as opções presentes. Para adiconar/criar opções basta utilizar a tag <strong>"&ltoption&gt"</strong></p>
+
+        <p><strong>optgroup:</strong> Permite o agrupamento de opções dentro da área de escolha. As opções dentro de "optgroup" serão agrupadas em uma categoria no local de escolha</p>
+
+        <p><strong>datalist:</strong> Permite adicionar opções/sugestões a um campo de texto</p>
+
+        <p><strong>textarea:</strong> Permite criar uma área para o usuário enviar mensagens. É recomendável utilizar somente com o método <strong>POST</strong>, devido o limite de 300bytes do método GET</p>
+    </section>
+  </body>
+</html>
