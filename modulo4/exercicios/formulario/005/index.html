@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="../styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <form action="cadastro.js" method="get">
+        <fieldset>
+            <legend>Gênero</legend>
+
+            <br>
+
+            <div>
+                <label for="imas">
+                    Masculino:
+                    <input type="radio" name="sex" id="imas" value="M">
+                </label>
+            </div>
+
+            <div>
+                <label for="ifem">
+                    Feminino:
+                    <input type="radio" name="sex" id="ifem" value="F">
+                </label>
+            </div>
+            
+            <div>
+                <label for="ioutro">
+                    Outro:
+                    <input type="radio" name="sex" id="ioutro" value="O">
+                </label>
+            </div>
+            
+            <div>
+                <label for="in">
+                    Prefiro não dizer:
+                    <input type="radio" name="sex" id="in" checked value="N">
+                </label>
+            </div>
+
+            <br>
+
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </fieldset>
+    </form>
+    <form action="cadastro.js" method="get">
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+
+            <br>
+
+            <div>
+                <label for="ifut">
+                    Futebol:
+                    <input type="checkbox" name="fut" id="ifut">
+                </label>
+            </div>
+
+            <div>
+                <label for="ibas">
+                    Basquete:
+                    <input type="checkbox" name="bas" id="ibas">
+                </label>
+            </div>
+
+            <div>
+                <label for="iten">
+                    Tênis:
+                    <input type="checkbox" name="ten" id="iten">
+                </label>
+            </div>
+
+            <div>
+                <label for="ivol">
+                    Vôlei:
+                    <input type="checkbox" name="vol" id="ivol">
+                </label>
+            </div>
+
+            <div>
+                <label for="ibox">
+                    Boxe:
+                    <input type="checkbox" name="box" id="ibox">
+                </label>
+            </div>
+
+            <div>
+                <label for="ihan">
+                    Handebol:
+                    <input type="checkbox" name="han" id="ihan">
+                </label>
+            </div>
+
+            <div>
+                <label for="ioutr">
+                    Outro:
+                    <input type="checkbox" name="outr" id="ioutr" checked>
+                </label>
+            </div>
+
+            <br>
+
+            <div>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </div>
+        </fieldset>
+    </form>
+
+    <section>
+        <h1>Extra:</h1>
+        <p>checked: Deixa um checkbox ou radio marcado previamente</p>
+        <p>value: altera a saída dos dados. ex.: ao invés de on/off, o "value" pode ser "M" ou qualquer outro</p>
+        <p>OBS: quando criamos campos de imput do tipo "radio", é importante agrupá-los, além do fieldset, com os mesmos nomes, senão será possível marcar mais de uma opção</p>
+    </section>
+</body>
+
+</html>

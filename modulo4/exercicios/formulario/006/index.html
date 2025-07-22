@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <h1>Exemplo de Formulário:</h1>
+    <form action="cadastro.js" method="POST">
+        <div>
+            <label for="icor">
+                Cor:
+                <input type="color" name="cor" id="icor">
+            </label>
+        </div>
+
+        <div>
+            <label for="irange">
+                Range:
+                <input type="range" name="range" id="irange" min="0" max="100">
+            </label>
+        </div>
+
+        <div>
+            Arquivo:
+            <label for="ifile">
+                <input type="file" name="file" id="ifile">
+            </label>
+        </div>
+    </form>
+
+    <section id="aviso">
+        <h1>Importante:</h1>
+        <p>Caso vá utilizar o "imput:file", o "form" deve utilizar o método de envio "POST", e não "GET".</p>
+    </section>
+  </body>
+</html>
