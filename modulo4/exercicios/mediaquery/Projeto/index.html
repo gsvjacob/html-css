@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/style.css" media="all">
+    <link rel="stylesheet" href="styles/mediaQuery.css" media="screen">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Site Responsivo</title>
   </head>
-  <body>    
+  <body onresize="resize()">    
     <header>
         <h1>Meu Site</h1>
         <span id="menu" class="material-icons" onclick="abrirMenu()">menu</span>
@@ -58,6 +59,14 @@
     </footer>
 
     <script>
+        function resize() {
+          if (window.innerWidth >= 768) {
+            itens.style.display = "block"
+          } else {
+            itens.style.display = "none"
+          }
+        }
+
         function abrirMenu() {
             if (itens.style.display == "block") {
                 itens.style.display = "none"
