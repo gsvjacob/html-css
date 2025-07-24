@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site Responsivo</title>
+  </head>
+  <body>    
+    <header>
+        <h1>Meu Site</h1>
+        <span id="menu" class="material-icons" onclick="abrirMenu()">menu</span>
+
+      <menu id="itens">
+        <ul>
+            <li><a href="#">Opção 1</a></li>
+            <li><a href="#">Opção 2</a></li>
+            <li><a href="#">Opção 3</a></li>
+            <li><a href="#">Opção 4</a></ul></li>
+      </menu>
+    </header>
+    <main>
+      <h2>Teste</h2>
+      <article>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum earum
+            itaque tempore, tempora reprehenderit numquam ex impedit sit
+            repellendus, similique quae quia velit maxime debitis ducimus sequi
+            inventore maiores id. Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Unde, praesentium accusamus, fugiat exercitationem
+            minima nam possimus, dolorum voluptatum repellendus deserunt minus
+            tempore dicta sunt reiciendis ipsa labore id perferendis maxime.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+            beatae quod maxime molestiae animi fuga doloremque, optio minus soluta
+            pariatur sunt maiores dolores labore repellendus nisi qui, placeat a
+            nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt
+            assumenda enim dolores velit repellendus. Tenetur dolorum atque repellat
+            iste! Nostrum doloribus perferendis illum dignissimos mollitia vel
+            possimus, quis nisi beatae. Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Distinctio obcaecati illo dolores molestias veritatis
+            alias nihil voluptatibus at, asperiores, aspernatur suscipit magni
+            delectus voluptate in consectetur praesentium explicabo odio tempore.
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis
+            molestias possimus officia, veniam obcaecati esse inventore nulla cum
+            reprehenderit beatae, recusandae voluptatibus hic natus non quis et
+            quidem, debitis blanditiis!
+          </p>
+      </article>
+    </main>
+    <footer>
+        <div></div>
+    </footer>
+
+    <script>
+        function abrirMenu() {
+            if (itens.style.display == "block") {
+                itens.style.display = "none"
+            } else {
+                itens.style.display = "block"
+            }
+        }
+    </script>
+  </body>
+</html>
