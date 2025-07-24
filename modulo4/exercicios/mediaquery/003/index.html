@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query</title>
+    <style>
+      /* declarações gerais */
+
+      * {
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      html,
+      body {
+        height: 100vh;
+        width: 100vw;
+        background-color: #233eff;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+      h1 {
+        color: white;
+        margin: 10px 10px;
+        text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5);
+        text-align: center;
+      }
+
+      .obs {
+        background-color: red;
+        padding: 10px;
+        color: white;
+        border: 3px solid darkred;
+        border-radius: 20px;
+        margin: 10px 10px;
+      }
+
+      /* declarações paisagem */
+
+      @media screen and (orientation: landscape) {
+        html,
+        body {
+          background-image: url(../../imagens/cev-landscape.jpg);
+          background-position: left bottom;
+        }
+      }
+
+      /* declarações retrato */
+      
+      @media screen and (orientation: portrait) {
+        html,
+        body {
+          background-image: url(../../imagens/cev-portrait.jpg);
+          background-position: center bottom;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Mude a Orientação do seu Dispositivo</h1>
+
+    <p class="obs">
+      " <strong>media = 'all'</strong> ": Aplica os estilos de CSS para todos os
+      tipos de mídia
+    </p>
+    <p class="obs">
+      <strong>Media Features</strong>: São especificadas entre parênteses após o
+      media type (ex.: media="screen and (orientation: portrait)")
+    </p>
+  </body>
+</html>
