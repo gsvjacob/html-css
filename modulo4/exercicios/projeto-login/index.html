@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="stylesheet" href="styles/style.css" media="all" />
+    <link rel="stylesheet" href="styles/mq.css" media="screen" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <body>
+    <main>
+      <section id="login">
+        <div id="imagem">
+        </div>
+        <div id="formulario">
+            <p>Seja bem-vindo(a) novamente! Realize o login para acessar nosso site</p>
+          <form action="login.js" method="POST">
+            <div>
+              <label for="iemail">
+                <input
+                  type="email"
+                  name="email"
+                  id="iemail"
+                  placeholder=" Insira seu email"
+                  required
+
+                />
+              </label>
+            </div>
+            <div>
+              <label for="isenha">
+                <input
+                  type="password"
+                  name="senha"
+                  id="isenha"
+                  placeholder=" Insira sua senha"
+                  required
+                />
+              </label>
+            </div>
+            <div>
+                <input id="enviar" type="submit" value="Login">
+            </div>
+            <a href="#" id="esqueceu">Esqueceu sua senha?</a>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
