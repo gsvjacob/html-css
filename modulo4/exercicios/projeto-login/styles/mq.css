@@ -30,7 +30,6 @@ TV's: 1920px em diante
     width: 300px;
     left: 50%;
     bottom: 50%;
-
     transform: translate(0%, 20%);
   }
 
