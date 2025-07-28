@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: gray;
+}
+
+.item {
+    background-color: white;
+    border: 1px solid black;
+    flex: auto;
+    margin: 10px;
+}
+
+.aviso {
+    background-color: red;
+    border: 5px solid darkred;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 10px;
+    color: white;
+}
