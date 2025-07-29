@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Tamanho</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        body, html {
+            background-color: blue;
+        }
+
+        h1, h2, p {
+            color: white;
+            margin: 10px 20px;
+        }
+
+        hr {
+            border: 4px dashed white;
+        }
+
+        .container {
+            display: flex;
+            background-color: rgba(0, 0, 0, 0.5);
+            max-width: 800px;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        .box0 {
+            flex-grow: 0;
+            flex-basis: 100px;
+            padding: 50px;
+            margin: 15px;
+            border-radius: 15px;
+            background-color: white;
+            border: 5px solid gray;
+        }
+
+        .box1 {
+            flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: 100px;
+            padding: 50px;
+            margin: 15px;
+            border: 5px solid rgb(209, 175, 24);
+            border-radius: 15px;
+            background-color: rgb(255, 255, 82);
+        }
+
+        .box2 {
+            flex-shrink: 1;
+            flex-basis: 850px;
+            padding: 50px;
+            margin: 15px;
+            border-radius: 15px;
+            background-color: white;
+            border: 5px solid gray;
+        }
+
+        .box3 {
+            flex-shrink: 0;
+            flex-basis: 850px;
+            padding: 50px;
+            margin: 15px;
+            border: 5px solid rgb(209, 175, 24);
+            border-radius: 15px;
+            background-color: rgb(255, 255, 82);
+        }
+    </style>
+</head>
+<body>
+    <h1>Controle de tamanho dos itens em flexbox:</h1>
+
+    <hr>
+
+    <h2>Flex-grow</h2>
+    <p>Define se um item pode (1) ou não (0) crescer de acordo com o contâiner</p>
+
+    <br>
+
+    <strong>
+        <p>flex-grow: 0;</p>
+    </strong>
+    <div class="container">
+        <div class="box0"></div>
+    </div>
+    
+    <strong>
+        <p>flex-grow: 1;</p>
+    </strong>
+    <div class="container">
+        <div class="box1"></div>
+    </div>
+
+    <hr>
+
+    <h2>Flex-shrink</h2>
+    <p>Define se um item pode (1) ou não (0) diminuir de acordo com o contâiner</p>
+
+    <br>
+
+    <strong>
+        <p>flex-shrink: 1;</p>
+    </strong>
+    <div class="container">
+        <div class="box2"></div>
+    </div>
+    
+    <strong>
+        <p>flex-shrink: 0;</p>
+    </strong>
+    <div class="container">
+        <div class="box3"></div>
+    
+    </div>
+</body>
+</html>
