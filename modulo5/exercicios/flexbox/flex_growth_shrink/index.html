@@ -19,10 +19,29 @@
         h1, h2, p {
             color: white;
             margin: 10px 20px;
+            text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.75);
+        }
+
+        p {
+            text-indent: 20px;
         }
 
         hr {
             border: 4px dashed white;
+        }
+
+        .column {
+            flex-direction: column;
+        }
+
+        .aviso {
+            display: flex;
+            background-color: darkred;
+            max-width: 800px;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
         }
 
         .container {
@@ -32,6 +51,7 @@
             margin: 20px;
             padding: 20px;
             border-radius: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
         }
 
         .box0 {
@@ -114,7 +134,17 @@
     </strong>
     <div class="container">
         <div class="box3"></div>
-    
+    </div>
+
+    <div class=" aviso column">
+        <h2>Importante:</h2>
+        <p>A W3C recomenda utilizar o shorthand <strong>"flex"</strong> no lugar de declarar individualmente as propriedades <strong>"grow" "shrink" "basis"</strong></p>
+        <p>A ordem sempre deve ser: <strong>flex: {grow} {shrink} {basis};</strong></p>
+        <h2>Observações:</h2>
+        <p>Caso você não declare o "flex" ele sera definido por padrão como <strong>"flex: 0 1 auto;"</strong>, e caso você deseje declarar mesmo sendo as configurações padrões, você pode utilizar <strong>"flex: initial;"</strong></p>
+        <p>Caso você deseje itens não tão flexíveis você pode utilziar <strong>"flex: none;"</strong> que define os valores para <strong>"flex: 0 0 auto;"</strong></p>
+        <p>Caso você deseje itens mais flexíveis você pode utilizar <strong>"flex: auto;"</strong> que define os valores para <strong>"flex: 1 1 auto;"</strong></p>
+        <p>Caso você declare somente dois ou menos valores, o restante receberá um valor padrão. Por exemplo <strong>"flex: 3" = "flex: 3 1 auto;"</strong></p>
     </div>
 </body>
 </html>
