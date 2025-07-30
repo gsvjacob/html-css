@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    height: 100vh;
+}
+
+p, h1, h2 {
+    margin: 20px;
+}
+
+p {
+    text-indent: 20px;
+    text-align: justify;
+}
+
+section.flex-content p {
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+section.flex-content h2 {
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+img {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+    padding: 10px 20px;
+    width: 90%;
+}
+
+.flex-content {
+    display: flex;
+    flex-flow: column nowrap;
+    background-image: radial-gradient(red, rgb(128, 0, 0));
+    color: white;
+    padding: 20px 0px;
+}
+
+.text-media {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.media-text {
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between;
+}
+
+.normal {
+    padding: 20px 0px;
+}
+
+.text {
+    flex: 1 1 500px;
+}
+
+.media {
+    flex: 1 0 400px;
+}
