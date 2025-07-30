@@ -10,8 +10,8 @@
     }
     
     menu {
-        display: block;
-        margin: 5px;
+        display: flex;
+        margin: 0px 10px;
     }
     
     h1 {
@@ -21,9 +21,8 @@
     header > menu > a {
         background-color: rgb(0, 0, 50);
         display: inline;
-        padding: 5px;
+        padding: 7px;
         border-radius: 10px;
-        border: 3px solid blue;
     }
 
     a:hover {
